@@ -18,5 +18,11 @@ public class Kurs {
     private Double kursWaluty;
     private String symbol;
 
+    @Override
+    public String toString() {
+        return String.format(
+                "KURSY[id=%d, date='%s', kursWaluty='%s', symbol='%s']",
+                id, date, kursWaluty, symbol);
+    }
 
 }
